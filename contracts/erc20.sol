@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract Tune is ERC20 {
     address public owner;
     address payable [] public receievers;
-    uint256 months = 1697839280;
+    uint256 months = 1697839280; //timestamp of 1 year from now
     uint start = block.timestamp;
     
     constructor() public ERC20("Tune", "XYZ") {
